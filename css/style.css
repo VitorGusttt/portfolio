@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@font-face {
+    font-family: pixo-reto;
+    src: url(../fonts/pixo_reto/Pixo\ Reto.ttf);
+}
+
+@font-face {
+    font-family: street-soul;
+    src: url(../fonts/street_soul/street\ soul.ttf);
+}
+
+@font-face {
+    font-family: street-fire;
+    src: url(../fonts/streetfire/Streetfire.otf);
+}
+
+
+
+html{
+    --roxo: #46166B;
+    --preto: #000;
+    --rosa: #9A31EB;
+    --bg: #f3f3f3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background: var(--bg);
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+
+#header-nome h2{
+    font-size: 1.5em;
+    color: var(--preto);
+    transition: ease-in-out 0.5s;
+
+}
+
+#header-nome h2:hover{
+    color:  var(--rosa);
+    font-size: 1.6em;
+}
+
+
+a{
+    text-decoration: none;  
+    color: var(--preto);
+}
+#header-links {
+    display: flex;
+    gap: 10px;
+    justify-items: center;
+    
+    
+}
+
+#header-links a{
+    padding: 0px 10px;
+    font-size: 1.2em;
+    transition: ease-in-out 0.3s;
+}
+
+
+#header-links a:hover{
+    color: var(--rosa);
+}
+
+#header-links i{
+    margin: auto;
+    color: var(--preto);
+}
+
+nav #home{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    margin-bottom: 140px;
+}
+
+#home-conteudo{
+    padding: 20px;
+    width: 55%;
+}
+
+#home-conteudo h1{
+    font-size: 4em;
+    margin-bottom: 5px;
+    color: var(--preto);
+}
+
+#home-conteudo h1 span{
+    color: var(--roxo);
+}
+
+#home-conteudo h3{
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: var(--preto);
+
+}
+
+#home-conteudo p{
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 15px;
+    width: 90%;
+    color: var(--preto);
+
+}
+
+#home-conteudo a button{
+    width: 30%;
+    height: 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: var(--roxo);
+    font-size: 0.8em;
+    font-weight: 500;
+    border: var(--roxo) 1px solid;
+    transition: 0.5s ease-in-out;
+}
+
+#home-conteudo a button:hover{
+    box-shadow: var(--rosa) 2.85px 0.9px 3.95px;
+}
+
+
+#home-foto {
+  width: 50%;
+}
+
+#skills{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+#skills-linguagens{
+    width: 50%;
+}
+
+#skills-linguagens ul{
+    list-style: none;
+    border-right: 1px var(--roxo) solid;
+}
+#skills-linguagens li{
+    align-items: center;
+    display: flex;
+}
+
+
+#skills-linguagens li h2{
+    font-size: 1.5em;
+    padding: 10px;
+    color:var(--roxo);
+}
+
+
+
+#skills-linguagens img{
+    width: 20%;
+    transition: ease-in-out 0.6s;
+}
+
+#skills-linguagens li img:hover{
+    width: 30%;
+}
+
+
+#skills-texto{
+    width: 50%;
+    height: 225px;
+}
+
+#skills-texto h1{
+    text-align: center;
+    margin: 1px;
+    font-size: 3em;
+    color: var(--roxo);   
+    transition: ease-in-out 0.6s;
+}
+
+#skills-texto h1:hover{
+    font-size: 3.8em;
+}
+
+
+#skills-texto p{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 15px;
+    width: 90%;
+    color: var(--preto);
+
+}
+
+.projects{
+    border-top: 1px var(--roxo) solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 140px auto;
+    padding: 15px;
+}
+
+.projects .projects-header{
+    width: 100%;
+    margin: 20px auto;
+}
+
+.projects .projects-header h1{
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 3em;
+    color: var(--roxo);
+    text-align: center;
+    transition: ease-in-out 0.6s;
+}
+
+.projects .projects-header h1:hover{
+    font-size: 3.8em;
+}
+
+
+
+.projects .projects-header p{
+    color: var(--preto);
+    text-align: center;
+    font-size: 0.6em;
+}
+
+.projects .projects-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    margin: 1em;
+}
+
+.projects .projects-box .projects-img {
+    width: 50%;
+    padding: 15px;
+    border-left: var(--roxo) 1px solid;
+}
+
+.projects .projects-box .projects-img img {
+    width: 100%;
+}
+
+.projects .projects-box .projects-text{
+    width: 50%;
+}
+
+.projects .projects-box .projects-text h3{
+    color: var(--roxo);
+    font-size: 2em;
+    text-align: center;
+    transition: ease-in-out 0.4s;
+}
+
+.projects .projects-box .projects-text h3:hover{
+    font-size: 2.5em;
+}
+
+
+.projects .projects-box .projects-text p{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 15px;
+    width: 90%;
+    color: var(--preto);
+}
+
+
+
+footer{
+    border-top:1px solid var(--roxo) ;
+    width: 100%;
+    margin: 50px auto 10px auto;
+    text-align: center;
+    color: var(--preto);
+
+}
+
+.pixo-reto {
+    font-family: pixo-reto;
+    font-size: 0.8em;
+
+}
+
+
+.street-soul {
+    font-size: 1em;
+    font-family: street-soul;
+}
+
+
+.street-fire {
+    font-size: 1em;
+    font-family: street-fire;
+}
+
+

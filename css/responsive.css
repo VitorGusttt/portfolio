@@ -1,0 +1,93 @@
+@media (max-width: 1000px){
+
+    header{
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        border-bottom:1px solid var(--roxo) ;
+
+    }
+
+}
+
+@media (max-width: 900px){
+    
+    header #header-links{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        height: 200px;
+        border-bottom:1px solid var(--roxo) ;
+    }
+
+    nav #home{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    #home-conteudo{
+        text-align: center;
+        width: 100%;
+
+    }
+
+    #home-foto{
+        width: fit-content;
+    }
+
+    #skills{
+        flex-direction: column;
+    }
+
+    #skills-linguagens ul{
+        border-right:none ;
+        border-bottom: var(--roxo) 1px solid; 
+        padding-bottom:20px;
+        margin-bottom: 20px;
+        
+    }
+
+    #skills-linguagens li{
+        justify-content: center;
+    }
+
+    #skills-texto{
+        width: 100%;
+        border-bottom: var(--roxo) 1px solid;
+    }
+
+    #skills-linguagens img{
+        width: 50%;
+        transition: ease-in-out 0.6s;
+    }
+
+    #skills-linguagens li img:hover{
+        width: 60%;
+    }
+
+    .projects .projects-box{
+        flex-direction: column;
+    }
+
+    .projects .projects-box .projects-img {
+        border-top: var(--roxo) 1px solid;
+        border-left: none;
+        width: 100%;
+    }
+
+    .projects .projects-box .projects-text{
+        width: 100%;
+    }
+    
+
+
+
+}
