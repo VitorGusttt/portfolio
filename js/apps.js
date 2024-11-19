@@ -52,7 +52,7 @@ btnTheme.addEventListener('click', () => {
 //aqui se inicia o efeito maquina de escrever
 function escreverEfeito(tagComTexto, tempoDesejado){
     let tag = document.querySelector(tagComTexto);
-    let texto = `Hello, my name is Vitor Gustavo, I'm 17 years old, and I'm looking for opportunities to work as a full-stack developer.`;
+    let texto = `Hello, my name is Vitor Gustavo, I'm 18 years old, and I'm looking for opportunities to work as a full-stack developer.`;
 
     const textoSplited = texto.split('')
     
@@ -63,4 +63,4 @@ function escreverEfeito(tagComTexto, tempoDesejado){
     });
     
 };
-escreverEfeito("#pApresentation",80)
+escreverEfeito("#pApresentation",60)
