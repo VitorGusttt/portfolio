@@ -19,6 +19,7 @@
 
 html{
     --roxo: #46166B;
+
     --preto: #000;
     --rosa: #9A31EB;
     --bg: #f3f3f3;
@@ -147,7 +148,16 @@ nav #home{
 
 #home-foto {
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
+#home-foto img{
+    width: 80%;
+    border-radius: 50%;
+  }
 
 #skills{
     display: flex;
